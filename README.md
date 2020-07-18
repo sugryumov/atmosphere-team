@@ -1,2 +1,0 @@
-# atmosphere-team
-Begin app
