@@ -1,0 +1,117 @@
+.technology {
+  padding: 40px 0 50px;
+  background: var(--background-section);
+}
+
+.technology__title {
+  margin-bottom: 50px;
+}
+
+.technology__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology__item {
+  width: 28%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.technology__img {
+  width: 100%;
+  height: auto;
+  max-height: 30px;
+}
+
+.technology__img-js,
+.technology__img-redux,
+.technology__img-nest,
+.technology__img-mobx,
+.technology__img-docker,
+.technology__img-hapi,
+.technology__img-mongodb,
+.technology__img-mysql,
+.technology__img-kafka {
+  max-height: 45px;
+}
+
+@media all and (min-width: 900px) {
+  .technology {
+    position: relative;
+    padding: 70px 0 40px;
+
+    &:before {
+      position: absolute;
+      top: 40%;
+      content: '';
+      width: 300px;
+      height: 200px;
+      background-image: url('/images/bg-technology-left.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  .technology__title {
+    margin-bottom: 80px;
+  }
+
+  .technology__item {
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .technology {
+    padding: 150px 0 60px;
+
+    &:before {
+      width: 600px;
+      height: 500px;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      width: 455px;
+      height: 100%;
+      background-image: url('/images/bg-technology-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  .technology__item {
+    width: 20%;
+    margin-bottom: 100px;
+  }
+
+  .technology__img-js,
+  .technology__img-redux,
+  .technology__img-nest,
+  .technology__img-mobx,
+  .technology__img-docker,
+  .technology__img-hapi,
+  .technology__img-mongodb,
+  .technology__img-mysql,
+  .technology__img-kafka {
+    max-height: 55px;
+  }
+
+  .technology__img-rabbit,
+  .technology__img-postgresql {
+    max-height: 22px;
+  }
+
+  .technology__img-kafka {
+    max-height: 45px;
+  }
+}

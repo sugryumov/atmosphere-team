@@ -1,0 +1,250 @@
+.contact {
+  position: relative;
+  padding: 40px 0 50px;
+  background: url('/images/bg-contact.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.contact__title {
+  margin-bottom: 40px;
+  color: var(--font-color-secondary);
+}
+
+.contact__intro {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--font-color-secondary);
+}
+
+.contact__communication {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 30px;
+}
+
+.contact__label {
+  position: relative;
+  display: block;
+  width: 48px;
+  text-align: center;
+  font-size: 9px;
+  color: var(--font-color-secondary);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contact__label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact__custom-radio {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 62, 71, 0.2);
+  box-sizing: border-box;
+}
+
+.contact__custom-radio-email {
+  svg {
+    width: 20px;
+    height: 15px;
+    margin-top: 15px;
+  }
+}
+
+.contact__custom-radio-viber {
+  svg {
+    width: 22px;
+    height: 24px;
+    margin-top: 12px;
+  }
+}
+
+.contact__custom-radio-telegram {
+  svg {
+    width: 22px;
+    height: 20px;
+    margin-top: 15px;
+  }
+}
+
+.contact__custom-radio-whatsapp {
+  svg {
+    width: 22px;
+    height: 22px;
+    margin-top: 12px;
+  }
+}
+
+.contact__label:hover input ~ .contact__custom-radio {
+  transition: border 0.3s;
+  background: transparent;
+  border: 2px solid var(--color-accent);
+}
+
+.contact__label input:checked ~ .contact__custom-radio {
+  background: var(--background-gradient);
+  border: none;
+
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.contact__input {
+  width: 100%;
+  padding: 19px 7px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border: none;
+  box-shadow: 0px 1px 8px rgba(53, 62, 71, 0.2);
+}
+
+.contact__textarea {
+  width: 100%;
+  height: 184px;
+  padding: 19px 7px;
+  font-family: var(--font-family);
+  font-size: 13px;
+  box-shadow: 0px 1px 8px rgba(53, 62, 71, 0.2);
+  box-sizing: border-box;
+  border: none;
+}
+
+.contact__agreement {
+  margin: 15px 0 50px;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--font-color-secondary);
+}
+
+@media all and (min-width: 600px) {
+  .contact__intro {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact__communication {
+    margin-top: 120px;
+  }
+
+  .contact__label {
+    width: 75px;
+    font-size: 16px;
+  }
+
+  .contact__custom-radio {
+    top: -90px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .contact__custom-radio-email {
+    svg {
+      width: 31px;
+      height: 22px;
+      margin-top: 25px;
+    }
+  }
+
+  .contact__custom-radio-viber {
+    svg {
+      width: 34px;
+      height: 37px;
+      margin-top: 20px;
+    }
+  }
+
+  .contact__custom-radio-telegram {
+    svg {
+      width: 35px;
+      height: 30px;
+      margin-top: 22px;
+    }
+  }
+
+  .contact__custom-radio-whatsapp {
+    svg {
+      width: 35px;
+      height: 35px;
+      margin-top: 18px;
+    }
+  }
+
+  .contact__input,
+  .contact__textarea {
+    padding: 19px;
+    font-size: 16px;
+  }
+
+  .contact__agreement {
+    font-size: 16px;
+    line-height: 24px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 900px) {
+  .contact {
+    padding: 70px 0 80px;
+  }
+
+  .contact__intro {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .contact__form {
+    position: relative;
+    z-index: 5;
+    width: 570px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .contact {
+    position: relative;
+    z-index: 0;
+    padding: 120px 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -5;
+      content: '';
+      display: block;
+      width: 1285px;
+      height: 100%;
+
+      background-image: url('/images/bg-footer.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact__custom-radio {
+    top: -90px;
+    height: 75px;
+    width: 75px;
+  }
+}

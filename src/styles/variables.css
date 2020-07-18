@@ -1,0 +1,31 @@
+:root {
+  --font-family: Circe, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+
+  --color-accent: #0080db;
+
+  --font-color: #ffffff;
+  --font-color-accent: #3e7fca;
+  --font-color-secondary: #45515c;
+  --font-color-placeholder: rgba(73, 84, 95, 0.5);
+
+  --background-gradient: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    linear-gradient(116.22deg, #78aefe 12.9%, #0080db 69.28%);
+  --background-gradient-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(116.14deg, #78aefe 12.9%, #0080db 69.28%);
+  --background-gradient-focus: linear-gradient(
+    116.14deg,
+    #78aefe 12.9%,
+    #0080db 69.28%
+  );
+
+  --background-section: linear-gradient(180deg, #353e47 0%, #303841 100%);
+}

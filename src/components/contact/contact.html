@@ -1,0 +1,53 @@
+<section id="contact" class="contact">
+    <div class="container">
+        <p class="title contact__title">Узнайте подробнее о разработке</p>
+
+        <form action="" class="contact__form">
+            <p class="contact__intro">Выберите удобный способ связи:</p>
+
+            <div class="contact__communication">
+                <label class="contact__label">E-mail
+                    <input type="radio" name="contact" checked="checked">
+                    <span class="contact__custom-radio contact__custom-radio-email">
+                        <include src="src/images/icon-email.svg" />
+                    </span>
+                </label>
+
+                <label class="contact__label">Viber
+                    <input type="radio" name="contact">
+                    <span class="contact__custom-radio contact__custom-radio-viber">
+                        <include src="src/images/icon-viber.svg" />
+                    </span>
+                </label>
+
+                <label class="contact__label">Telegram
+                    <input type="radio" name="contact">
+                    <span class="contact__custom-radio contact__custom-radio-telegram">
+                        <include src="src/images/icon-telegram.svg" />
+                    </span>
+                </label>
+
+                <label class="contact__label">WhatsApp
+                    <input type="radio" name="contact">
+                    <span class="contact__custom-radio contact__custom-radio-whatsapp">
+                        <include src="src/images/icon-whatsapp.svg" />
+                    </span>
+                </label>
+            </div>
+
+            <input type="email" class="contact__input" placeholder="Введите email">
+            <input type="email" class="contact__input" placeholder="Ваше имя или название компании">
+
+            <textarea class="contact__textarea" placeholder="Оставить комментарий"></textarea>
+
+            <p class="contact__agreement">
+                Нажимая кнопку, вы принимаете<br> <a href="#" class="link contact__link">согласие</a> на обработку
+                персональных данных.
+            </p>
+
+            <div class="contact__button-wrap">
+                <button class="button contact__button" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
